@@ -1,5 +1,5 @@
 module ColorHelpers
-  def rand16
-    rand(1...16)*16 - 1
+  def rand8
+    rand(1...8)*32 - 1
   end
 end

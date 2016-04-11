@@ -75,6 +75,3 @@ class Game < Gosu::Window
     @tileset.draw_at(100)
   end
 end
-
-window = Game.new
-window.show

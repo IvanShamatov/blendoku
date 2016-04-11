@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require_relative "../lib/game.rb"
+
+window = Game.new
+window.show
