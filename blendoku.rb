@@ -3,8 +3,9 @@ require 'bundler'
 Bundler.require
 require "./lib/tile.rb"
 require "./lib/tileset.rb"
-require "./lib/level.rb"
-require "./gosu_ext/color.rb"
+require "./lib/color.rb"
+require "./lib/concerns/color_helpers.rb"
+require "./lib/concerns/draw_helpers.rb"
 
 class Game < Gosu::Window
   PADDING = 20
@@ -20,7 +21,7 @@ class Game < Gosu::Window
 
   def init
     size = (@level < 7) ? @level+3 : 10
-    @tileset = Tileset.new(Gosu::Color.random, Gosu::Color.random, size)
+    @tileset = Tileset.new(Color.random, Color.random, size)
     @selected = nil
   end
 

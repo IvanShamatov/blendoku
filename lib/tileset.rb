@@ -33,8 +33,8 @@ class Tileset
     # end
     
     tiles.each_with_index do |tile, i|
-      tile_x = i*Tile::WIDTH + (i+1)*27
-      tile_y = y + Tile::HEIGHT + 27
+      tile_x = i*Tile::WIDTH + (i+1)*10 + 27
+      tile_y = y + Tile::HEIGHT + 50
       tile.draw_at(tile_x, tile_y)
     end
   end
