@@ -10,5 +10,5 @@ It is a simple implementation of a `colors in a line` game inspired by Blendoku 
 $ git clone https://github.com/IvanShamatov/blendoku.git
 $ cd blendoku
 $ bundle install
-$ ruby blendoku.rb
+$ bin/blendoku
 ```
